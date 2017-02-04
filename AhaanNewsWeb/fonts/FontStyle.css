@@ -1,0 +1,11 @@
+﻿@font-face {
+    font-family: 'Kruti_Dev_010';
+    src: url('../fonts/Kruti_Dev_010.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+p.customfont { 
+    font-family: "Kruti_Dev_010", Verdana, Tahoma;
+    font-size:large;
+    text-align:justify;
+}
