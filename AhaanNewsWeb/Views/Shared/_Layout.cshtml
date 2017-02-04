@@ -20,14 +20,18 @@
                     <div style="padding:10px;margin-left:-40px;display:block;opacity:1;">
                         <img src="~/Content/Images/AhaanNewsHindiLogo.jpg" style="width:150px;height:100px;" />
                     </div>
-                    
+                <div style="float:right;padding:10px;margin-left:150px;display:block;opacity:1;width:350px;margin-top:-120px;">
+                   <span style="color:white;font-Size:14px;">Registration ID No.: <b>847/PTGPO/2015(BIHAR)</b></span>
+                </div>
                  </div>
+
             <img src="~/Content/Images/AhaanNewsSocialSites.jpg" style="width:120px;height:100px;float:right;margin-right:-20px;" />
             <div class="navbar-collapse collapse" style="width:80%;margin-left:150px;margin-top:-20px;">
                 @Html.Partial("_LoginPartial")
                 @*<ul class="nav navbar-nav">*@
                 <ul class="nav navbar-nav">
                     <li><span class="glyphicon glyphicon-home"> @Html.ActionLink("पहला पन्ना", "Index", "Home")</span></li>
+                    <li>@Html.ActionLink("AHAAN NEWS", "About", "Home")</li>
                     <li>@Html.ActionLink("समाचार", "About", "Home")</li>
                     <li>@Html.ActionLink("भारत", "About", "Home")</li>
                     <li>@Html.ActionLink("भारत दर्शन", "About", "Home")</li>
@@ -42,7 +46,7 @@
                     <li>@Html.ActionLink("वैशाली", "About", "Home")</li>
                     <li><span class="glyphicon glyphicon-earphone"> @Html.ActionLink("संपर्क", "Contact", "Home")</span></li>  
                   </ul>
-                @Html.Partial("_LoginPartial")
+               
             </div>
         </div>
     </div>
@@ -50,7 +54,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p style="font-family:Arial;">Copy Right <span class="glyphicon glyphicon-copyright-mark" /> @DateTime.Now.Year-@DateTime.Now.AddYears(5).Year Ahaan News</p>
         </footer>
     </div>
 
