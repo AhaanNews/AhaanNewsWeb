@@ -302,6 +302,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_ImprotantLink.cshtml" />
+    <Content Include="Views\Home\समाचार.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\App_LocalResources\" />
