@@ -9,3 +9,7 @@ p.customfont {
     font-size:large;
     text-align:justify;
 }
+@font-face {
+    font-family: 'Kruti_Dev_010';
+    src: url('Kruti_Dev_010.ttf') format('truetype');
+}
