@@ -7,49 +7,50 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-    
+
 </head>
 <body>
-    <div>
+    <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
-            <div class="navbar-header"  style="float:left;">
-                    @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>*@
-                <div class="navbar-collapse collapse">
-                    <div style="padding:5px;margin-left:-40px;display:block;opacity:1;">
-                        <img src="~/Content/Images/AhaanNewsHindiLogo.jpg" style="width:150px;height:100px;" />
-                    </div>
-                    <div style="float:right;padding:10px;margin-left:150px;display:block;opacity:1;width:350px;margin-top:0px;">
-                        <span style="color:black;font-Size:14px;">Registration ID No.: <b>847/PTGPO/2015(BIHAR)</b></span>
-                    </div>
-                    <div  style="float:right;padding:10px;margin-left:150px;display:block;opacity:1;width:350px;margin-top:0px;">@Html.Partial("_LoginPartial")</div>
-                    @*<ul class="nav navbar-nav">*@
-                    <ul class="nav navbar-nav">
-                        @*<li><span class="glyphicon glyphicon-home"> @Html.ActionLink("पहला पन्ना", "Index", "Home")</span></li>*@
-                        <li> @Html.ActionLink("पहला पन्ना", "Index", "Home")</li>
-                        <li>@Html.ActionLink("AHAAN NEWS", "About", "Home")</li>
-                        <li>@Html.ActionLink("समाचार", "About", "Home")</li>
-                        <li>@Html.ActionLink("भारत", "About", "Home")</li>
-                        <li>@Html.ActionLink("भारत दर्शन", "About", "Home")</li>
-                        <li>@Html.ActionLink("वीडियो", "About", "Home")</li>
-                        <li>@Html.ActionLink("राजनीति", "About", "Home")</li>
-                        <li>@Html.ActionLink("कार्यक्रम", "About", "Home")</li>
-                        <li>@Html.ActionLink("तस्वीर", "About", "Home")</li>
-                        <li>@Html.ActionLink("सूचना खिड़की", "About", "Home")</li>
-                        <li>@Html.ActionLink("खेल", "About", "Home")</li>
-                        <li>@Html.ActionLink("मूवी मसाला", "About", "Home")</li>
-                        <li>@Html.ActionLink("जुर्म", "About", "Home")</li>
-                        <li>@Html.ActionLink("वैशाली", "About", "Home")</li>
-                        <li>@Html.ActionLink("सूचना का अधिकार", "About", "Home")</li>
-                        @*<li><span class="glyphicon glyphicon-earphone"> @Html.ActionLink("संपर्क", "Contact", "Home")</span></li>*@
-                        <li>@Html.ActionLink("संपर्क", "Contact", "Home")</li>
-                        
-                    </ul>
+            <div class="navbar-header" style="float:left;">
+                <div style="padding:10px;margin-left:-40px;display:block;opacity:1;">
+                    <img src="~/Content/Images/AhaanNewsHindiLogo.jpg" style="width:150px;height:100px;border-radius:90px;" />
+                </div>
 
-                </div>                
-                 </div>
-            <img src="~/Content/Images/AhaanNewsSocialSites.jpg" style="width:120px;height:100px;float:right;margin-right:0px;" />
-            
+            </div>
+            <div style="float:right;margin-left:250px;display:block;opacity:1;width:300px;margin-top:0px;">
+                <span style="color:black;font-Size:12px;">Registration ID No.: <b>847/PTGPO/2015(BIHAR)</b></span>
+                @Html.Partial("_SocialSitesAhaanNews")
+            </div>
+
+            <div style="float:right;padding:10px;margin-left:150px;display:block;opacity:1;width:350px;margin-top:0px;">
+               
+                @Html.Partial("_LoginPartial")
+            </div>
+            <ul class="nav navbar-nav">
+                <li> @Html.ActionLink("पहला पन्ना", "Index", "Home")</li>
+                <li>@Html.ActionLink("AHAAN NEWS", "About", "Home")</li>
+                <li>@Html.ActionLink("समाचार", "About", "Home")</li>
+                <li>@Html.ActionLink("भारत", "About", "Home")</li>
+                <li>@Html.ActionLink("भारत दर्शन", "About", "Home")</li>
+                <li>@Html.ActionLink("वीडियो", "About", "Home")</li>
+                <li>@Html.ActionLink("राजनीति", "About", "Home")</li>
+                <li>@Html.ActionLink("कार्यक्रम", "About", "Home")</li>
+                <li>@Html.ActionLink("तस्वीर", "About", "Home")</li>
+                <li>@Html.ActionLink("सूचना खिड़की", "About", "Home")</li>
+                <li>@Html.ActionLink("खेल", "About", "Home")</li>
+                <li>@Html.ActionLink("मूवी मसाला", "About", "Home")</li>
+                <li>@Html.ActionLink("जुर्म", "About", "Home")</li>
+                <li>@Html.ActionLink("वैशाली", "About", "Home")</li>
+                <li>@Html.ActionLink("सूचना का अधिकार", "About", "Home")</li>
+                @*<li><span class="glyphicon glyphicon-earphone"> @Html.ActionLink("संपर्क", "Contact", "Home")</span></li>*@
+                <li>@Html.ActionLink("संपर्क", "Contact", "Home")</li>
+
+            </ul>
+
         </div>
+        </div>
+    </div>
     </div>
     <div class="container body-content">
         @RenderBody()

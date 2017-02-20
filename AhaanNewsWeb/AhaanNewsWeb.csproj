@@ -230,6 +230,9 @@
     <Content Include="Content\Images\AhaanNewsenglish.jpg" />
     <Content Include="Content\Images\AhaanNewsHindiLogo.jpg" />
     <Content Include="Content\Images\AhaanNewsSocialSites.jpg" />
+    <Content Include="Content\Images\google-plus-6-xxl.png" />
+    <Content Include="Content\Images\Twitter-logo-3D-shining-300x300.png" />
+    <Content Include="Content\Images\Watsapp-and-Facebook.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\FontStyle.css" />
@@ -303,6 +306,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_ImprotantLink.cshtml" />
     <Content Include="Views\Home\समाचार.cshtml" />
+    <Content Include="Views\Shared\_SocialSitesAhaanNews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\App_LocalResources\" />
